@@ -3,6 +3,7 @@ package com.willfp.libreforge.effects.executors.impl
 import com.willfp.libreforge.effects.Chain
 import com.willfp.libreforge.effects.executors.ChainExecutor
 import com.willfp.libreforge.effects.executors.ChainExecutorFactory
+import com.willfp.libreforge.toWeightedList
 import com.willfp.libreforge.triggers.DispatchedTrigger
 
 object RandomExecutorFactory : ChainExecutorFactory("random") {
@@ -10,7 +11,7 @@ object RandomExecutorFactory : ChainExecutorFactory("random") {
 
     object RandomChainExecutor : ChainExecutor {
         override fun execute(chain: Chain, trigger: DispatchedTrigger): Boolean {
-           return chain.random().trigger(trigger)
+            return chain.random(trigger.data).trigger(trigger)
         }
     }
 }
