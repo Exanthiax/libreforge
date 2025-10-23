@@ -43,10 +43,12 @@ dependencies {
     compileOnly(fileTree("../../lib") {
         include("*.jar")
     })
+    compileOnly("me.clip:placeholderapi:2.11.6")
 }
 
 repositories {
     maven("https://jitpack.io/")
+    maven("https://repo.extendedclip.com/content/repositories/placeholderapi/")
 }
 
 configurations.all {
