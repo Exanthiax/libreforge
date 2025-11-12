@@ -69,6 +69,7 @@ import com.willfp.libreforge.triggers.impl.TriggerMeleeAttack
 import com.willfp.libreforge.triggers.impl.TriggerMineBlock
 import com.willfp.libreforge.triggers.impl.TriggerMineBlockProgress
 import com.willfp.libreforge.triggers.impl.TriggerMove
+import com.willfp.libreforge.triggers.impl.TriggerOpenInventory
 import com.willfp.libreforge.triggers.impl.TriggerPickUpItem
 import com.willfp.libreforge.triggers.impl.TriggerPlaceBlock
 import com.willfp.libreforge.triggers.impl.TriggerPotionEffect
@@ -208,6 +209,7 @@ object Triggers : Registry<Trigger>() {
         register(TriggerMineBlock)
         register(TriggerMineBlockProgress)
         register(TriggerMove)
+        register(TriggerOpenInventory)
         register(TriggerPickUpItem)
         register(TriggerPlaceBlock)
         register(TriggerPotionEffect)

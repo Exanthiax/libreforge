@@ -20,6 +20,7 @@ import com.willfp.libreforge.filters.impl.FilterFromSpawner
 import com.willfp.libreforge.filters.impl.FilterFullyCharged
 import com.willfp.libreforge.filters.impl.FilterFullyGrown
 import com.willfp.libreforge.filters.impl.FilterHoneyLevelFull
+import com.willfp.libreforge.filters.impl.FilterInventoryType
 import com.willfp.libreforge.filters.impl.FilterIsBehindVictim
 import com.willfp.libreforge.filters.impl.FilterIsBoss
 import com.willfp.libreforge.filters.impl.FilterIsExpressionTrue
@@ -114,6 +115,7 @@ object Filters : Registry<Filter<*, *>>() {
         register(FilterFullyCharged)
         register(FilterFullyGrown)
         register(FilterHoneyLevelFull)
+        register(FilterInventoryType)
         register(FilterIsBehindVictim)
         register(FilterIsBoss)
         register(FilterIsExpressionTrue)
